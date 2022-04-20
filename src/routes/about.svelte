@@ -1,5 +1,6 @@
 <script context="module">
   import { browser, dev } from '$app/env';
+  import Pre from '$lib/Pre.svelte';
 
   // we don't need any JS on this page, though we'll load
   // it in dev so that we get hot module replacement...
@@ -27,7 +28,7 @@
   </p>
 
   <!-- TODO lose the @next! -->
-  <pre>npm init svelte@next</pre>
+  <Pre text="npm init svelte@next" />
 
   <p>
     The page you're looking at is purely static HTML, with no client-side interactivity needed.
