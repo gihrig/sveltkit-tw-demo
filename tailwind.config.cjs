@@ -10,6 +10,7 @@ const config = {
         code: '2px 2px 6px rgba(255, 255, 255, 0.25)',
       },
       colors: {
+        accent: '#ff3e00',
         code: {
           background: 'rgba(255, 255, 255, 0.45)',
           text: '#444444',

@@ -1,11 +1,12 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import logo from './img/svelte-logo.svg';
+  import A from '$lib/A.svelte';
 </script>
 
 <header>
   <div class="corner">
-    <a href="https://kit.svelte.dev">
+    <a href="https://kit.svelte.dev" target="_blank">
       <img src={logo} alt="SvelteKit" />
     </a>
   </div>

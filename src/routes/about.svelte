@@ -1,6 +1,7 @@
 <script context="module">
   import { browser, dev } from '$app/env';
   import Pre from '$lib/Pre.svelte';
+  import A from '$lib/A.svelte';
 
   // we don't need any JS on this page, though we'll load
   // it in dev so that we get hot module replacement...
@@ -19,12 +20,12 @@
   <title>About</title>
 </svelte:head>
 
-<div class="content">
+<article>
   <h1>About this app</h1>
 
   <p>
-    This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-    following into your command line and following the prompts:
+    This is a <A href="https://kit.svelte.dev" target="_blank" text="SvelteKit" /> app. You can make
+    your own by typing the following into your command line and following the prompts:
   </p>
 
   <!-- TODO lose the @next! -->
@@ -37,13 +38,13 @@
   </p>
 
   <p>
-    The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-    it with JavaScript disabled!
+    The <A href="/todos" target="_self" text="TODOs" /> page illustrates SvelteKit's data loading and
+    form handling. Try using it with JavaScript disabled!
   </p>
-</div>
+</article>
 
 <style>
-  .content {
+  article {
     width: 100%;
     max-width: var(--column-width);
     margin: var(--column-margin-top) auto 0 auto;

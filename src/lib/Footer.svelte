@@ -1,8 +1,24 @@
-<footer class="flex flex-col items-center justify-center py-2 sm:py-10">
+<script lang="ts">
+  import A from '$lib/A.svelte';
+</script>
+
+<footer>
   <p>
-    visit <a class="font-bold" href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit
+    visit <A
+      style="font-bold"
+      href="https://kit.svelte.dev"
+      target="_blank"
+      text="kit.svelte.dev"
+    /> to learn SvelteKit
   </p>
 </footer>
 
 <style>
+  footer {
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply py-2 sm:py-10;
+  }
 </style>
