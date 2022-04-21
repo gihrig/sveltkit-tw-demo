@@ -1,19 +1,18 @@
 <script lang="ts">
-  import A from '$lib/A.svelte';
 </script>
 
 <footer>
   <p>
-    visit <A
-      style="font-bold"
-      href="https://kit.svelte.dev"
-      target="_blank"
-      text="kit.svelte.dev"
-    /> to learn SvelteKit
+    visit <a href="https://kit.svelte.dev" target="_blank">kit.svelte.dev</a>
+    to learn SvelteKit
   </p>
 </footer>
 
 <style>
+  a {
+    @apply font-bold;
+  }
+
   footer {
     @apply flex;
     @apply flex-col;

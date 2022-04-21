@@ -1,7 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import logo from './img/svelte-logo.svg';
-  import A from '$lib/A.svelte';
 </script>
 
 <header>
