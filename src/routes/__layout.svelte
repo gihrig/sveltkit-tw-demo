@@ -14,13 +14,11 @@
 
 <style>
   main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    @apply flex flex-1 flex-col;
+    @apply p-4;
+    @apply w-full;
+    @apply max-w-screen-lg;
+    @apply my-0 mx-auto;
+    @apply box-border;
   }
 </style>
