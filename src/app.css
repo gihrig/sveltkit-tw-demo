@@ -4,45 +4,47 @@
 
 @tailwind base;
 
-:root {
-  @apply font-sans;
-}
+@layer base {
+  :root {
+    @apply font-sans;
+  }
 
-a {
-  @apply text-accent;
-  @apply hover:underline;
-}
+  a {
+    @apply text-accent;
+    @apply hover:underline;
+  }
 
-article {
-  @apply mx-auto mt-16 mb-0 w-full max-w-2xl;
-}
+  article {
+    @apply mx-auto mt-16 mb-0 w-full max-w-2xl;
+  }
 
-body {
-  @apply min-h-screen;
-  @apply m-0;
-  @apply bg-[linear-gradient(180deg,#b9c6d2_0%,#d0dde9_10.45%,#edf0f8_41.35%)];
-}
+  body {
+    @apply min-h-screen;
+    @apply m-0;
+    @apply bg-[linear-gradient(180deg,#b9c6d2_0%,#d0dde9_10.45%,#edf0f8_41.35%)];
+  }
 
-h1,
-h2,
-p {
-  @apply font-normal text-heading;
-}
+  h1,
+  h2,
+  p {
+    @apply font-normal text-heading;
+  }
 
-p {
-  @apply leading-normal;
-}
+  p {
+    @apply leading-normal;
+  }
 
-h1 {
-  @apply text-center text-3.5xl tablet:text-4.5xl;
-}
+  h1 {
+    @apply text-center text-3.5xl tablet:text-4.5xl;
+  }
 
-h2 {
-  @apply text-base;
-}
+  h2 {
+    @apply text-base;
+  }
 
-button:focus:not(:focus-visible) {
-  @apply outline-none;
+  button:focus:not(:focus-visible) {
+    @apply outline-none;
+  }
 }
 
 @tailwind components;
