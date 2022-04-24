@@ -23,12 +23,6 @@ body {
   @apply bg-[linear-gradient(180deg,#b9c6d2_0%,#d0dde9_10.45%,#edf0f8_41.35%)];
 }
 
-#svelte {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 h1,
 h2,
 p {
