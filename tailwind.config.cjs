@@ -28,6 +28,9 @@ const config = {
         mono: "'Fira Mono', monospace",
         sans: "Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;",
       },
+      fontSize: {
+        '3.5xl': '2.0rem',
+      },
     },
   },
 

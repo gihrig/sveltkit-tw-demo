@@ -26,21 +26,19 @@ body {
 h1,
 h2,
 p {
-  @apply text-heading;
-  font-weight: 400;
+  @apply font-normal text-heading;
 }
 
 p {
-  line-height: 1.5;
+  @apply leading-normal;
 }
 
 h1 {
-  font-size: 2rem;
-  text-align: center;
+  @apply text-center text-3.5xl;
 }
 
 h2 {
-  font-size: 1rem;
+  @apply text-base;
 }
 
 input,
