@@ -18,7 +18,7 @@
   <title>Todos</title>
 </svelte:head>
 
-<div class="todos">
+<article>
   <h1>Todos</h1>
 
   <form
@@ -73,14 +73,13 @@
       </form>
     </div>
   {/each}
-</div>
+</article>
 
 <style>
-  .todos {
-    width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
-    line-height: 1;
+  article {
+    /* TODO: Staradize to app.css */
+    /* Required only for exact match of SvelteKit example */
+    @apply leading-none;
   }
 
   .new {
