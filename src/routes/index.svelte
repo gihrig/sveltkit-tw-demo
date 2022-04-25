@@ -34,21 +34,15 @@
   }
 
   h1 {
-    width: 100%;
+    @apply w-full;
   }
 
   picture {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding: 0 0 calc(100% * 495 / 2048) 0;
+    --pb: calc(100% * 495 / 2048);
+    @apply relative h-0 w-full p-0 pb-[var(--pb)];
   }
 
   picture img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    display: block;
+    @apply absolute top-0 block h-full w-full;
   }
 </style>
