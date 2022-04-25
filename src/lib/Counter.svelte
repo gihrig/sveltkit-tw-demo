@@ -36,10 +36,9 @@
 
 <style>
   section {
-    display: flex;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 1rem 0;
+    @apply flex;
+    @apply my-4 mx-0;
+    @apply border-y border-solid border-slate-300;
   }
 
   section button {
