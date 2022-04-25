@@ -58,11 +58,7 @@
   }
 
   .counter-viewport {
-    width: 8em;
-    height: 4em;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
+    @apply relative h-16 w-32 overflow-hidden text-center;
   }
 
   .counter-viewport strong {
