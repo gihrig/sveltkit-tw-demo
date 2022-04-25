@@ -52,9 +52,9 @@
   }
 
   path {
-    @apply stroke-text;
+    @apply stroke-text stroke-2;
+    /* Not supported by Tailwind */
     vector-effect: non-scaling-stroke;
-    stroke-width: 2px;
   }
 
   .counter-viewport {
