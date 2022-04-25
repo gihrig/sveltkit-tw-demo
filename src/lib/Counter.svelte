@@ -42,16 +42,9 @@
   }
 
   section button {
-    @apply text-text hover:bg-hoverbg;
-    width: 2em;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    background-color: transparent;
-    touch-action: manipulation;
-    font-size: 2rem;
+    @apply flex items-center justify-center;
+    @apply w-16 p-0 text-3.5xl text-text hover:bg-hoverbg;
+    @apply touch-manipulation border-0 bg-transparent;
   }
 
   svg {
