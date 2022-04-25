@@ -48,8 +48,7 @@
   }
 
   svg {
-    width: 25%;
-    height: 25%;
+    @apply h-1/4 w-1/4;
   }
 
   path {
