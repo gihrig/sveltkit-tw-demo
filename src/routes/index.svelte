@@ -10,7 +10,7 @@
   <title>Home</title>
 </svelte:head>
 
-<section>
+<article>
   <picture>
     <source srcset="svelte-welcome.webp" type="image/webp" />
     <img src="svelte-welcome.png" alt="Welcome" />
@@ -25,15 +25,12 @@
   </h2>
 
   <Counter />
-</section>
+</article>
 
 <style>
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+  article {
+    @apply mt-0 max-w-full;
+    @apply flex flex-1 flex-col items-center justify-center;
   }
 
   h1 {
