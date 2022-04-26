@@ -31,6 +31,7 @@ const config = {
       fontSize: {
         '3.5xl': '2.0rem',
         '4.5xl': '2.4rem',
+        '6.5xl': '4.0rem',
       },
       screens: {
         tablet: '720px',

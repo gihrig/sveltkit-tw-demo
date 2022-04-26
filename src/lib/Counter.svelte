@@ -62,15 +62,8 @@
   }
 
   .counter-viewport strong {
-    @apply text-accent;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    font-weight: 400;
-    font-size: 4rem;
-    align-items: center;
-    justify-content: center;
+    @apply flex items-center justify-center;
+    @apply absolute h-full w-full text-6.5xl font-normal text-accent;
   }
 
   .counter-digits {
