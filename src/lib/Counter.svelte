@@ -71,7 +71,6 @@
   }
 
   .hidden {
-    top: -100%;
-    user-select: none;
+    @apply top-[-100%] select-none;
   }
 </style>
