@@ -82,10 +82,6 @@
     @apply leading-none;
   }
 
-  .new {
-    margin: 0 0 0.5rem 0;
-  }
-
   input {
     border: 1px solid transparent;
   }
@@ -96,14 +92,14 @@
     outline: none;
   }
 
+  .new {
+    @apply mx-0 mt-0 mb-2;
+  }
+
   .new input {
-    font-size: 28px;
-    width: 100%;
-    padding: 0.5em 1em 0.3em 1em;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    text-align: center;
+    /* Custom values are only for exact match to Sveltekit demo */
+    @apply w-full px-4 pt-[0.5em] pb-[0.3em] text-[28px];
+    @apply box-border rounded-lg bg-transparent text-center;
   }
 
   .todo {
