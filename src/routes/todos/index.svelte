@@ -77,19 +77,17 @@
 
 <style>
   article {
-    /* TODO: Staradize to app.css */
     /* Required only for exact match of SvelteKit example */
     @apply leading-none;
   }
 
   input {
-    border: 1px solid transparent;
+    @apply border border-solid border-transparent;
   }
 
   input:focus-visible {
-    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ff3e00 !important;
-    outline: none;
+    @apply shadow-inner shadow-soft;
+    @apply border border-solid border-accent outline-none;
   }
 
   .new {
@@ -97,7 +95,7 @@
   }
 
   .new input {
-    /* Custom values are only for exact match to Sveltekit demo */
+    /* Custom values are only for exact match to SvelteKit example */
     @apply w-full px-4 pt-[0.5em] pb-[0.3em] text-[28px];
     @apply box-border rounded-lg bg-transparent text-center;
   }

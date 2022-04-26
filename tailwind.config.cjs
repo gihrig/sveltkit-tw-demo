@@ -15,14 +15,15 @@ const config = {
       },
       colors: {
         accent: '#ff3e00',
-        heading: 'rgba(0, 0, 0, 0.7)',
-        text: '#444444',
-        hoverbg: '#b9c6d2',
-        navbg: 'rgba(255, 255, 255, 0.7)',
         code: {
           background: 'rgba(255, 255, 255, 0.45)',
           text: '#444444',
         },
+        heading: 'rgba(0, 0, 0, 0.7)',
+        hoverbg: '#b9c6d2',
+        navbg: 'rgba(255, 255, 255, 0.7)',
+        soft: 'rgba(0, 0, 0, 0.1)',
+        text: '#444444',
       },
       fontFamily: {
         mono: "'Fira Mono', monospace",
