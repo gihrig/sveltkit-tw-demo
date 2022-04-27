@@ -82,10 +82,7 @@
   }
 
   button.toggle {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    box-sizing: border-box;
-    background-size: 1em auto;
+    @apply box-border rounded-full border border-gray-900/25 bg-auto;
   }
 
   form.text {
