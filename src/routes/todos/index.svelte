@@ -82,14 +82,13 @@
   }
 
   button.toggle {
+    /* Todo done button */
     @apply box-border rounded-full border border-gray-900/25 bg-auto;
   }
 
   form.text {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex: 1;
+    /* Editable Todo item */
+    @apply relative flex flex-1 items-center;
   }
 
   input {
