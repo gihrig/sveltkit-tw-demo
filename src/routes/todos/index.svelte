@@ -77,7 +77,7 @@
 
 <style>
   article {
-    /* Required only for exact match of SvelteKit example */
+    /* TODO: Required only for exact match of SvelteKit example */
     @apply leading-none;
   }
 
@@ -97,8 +97,13 @@
 
   input {
     @apply border border-solid border-transparent;
-    @apply focus:shadow-inner focus:shadow-soft;
-    @apply focus:border-accent focus:outline-none;
+  }
+
+  input:focus-visible {
+    /* TODO: box-shadow hides blue border TW rules show */
+    /* @apply shadow-inner shadow-soft; */
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.1);
+    @apply border-accent outline-none;
   }
 
   .delete {
@@ -127,7 +132,7 @@
   }
 
   .new input {
-    /* Custom values are only for exact match to SvelteKit example */
+    /* TODO: Custom values are only for exact match to SvelteKit example */
     @apply w-full px-4 pt-[0.5em] pb-[0.3em] text-[28px];
     @apply box-border rounded-lg bg-transparent text-center;
   }

@@ -53,7 +53,7 @@
 
   path {
     @apply stroke-text stroke-2;
-    /* Not supported by Tailwind */
+    /* TODO: vector-offset Not supported by Tailwind? */
     vector-effect: non-scaling-stroke;
   }
 
