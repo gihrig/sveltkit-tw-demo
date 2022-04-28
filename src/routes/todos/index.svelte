@@ -153,9 +153,7 @@
   }
 
   .todo input {
-    flex: 1;
-    padding: 0.5em 2em 0.5em 0.8em;
-    border-radius: 3px;
+    @apply flex flex-1 rounded-sm py-2 pr-8 pl-3;
   }
 
   .todo input:focus + .save,
