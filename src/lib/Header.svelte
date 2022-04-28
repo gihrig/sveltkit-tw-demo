@@ -41,22 +41,15 @@
   }
 
   .corner {
-    width: 3em;
-    height: 3em;
+    @apply h-12 w-12;
   }
 
   .corner a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    @apply flex h-full w-full items-center justify-center;
   }
 
   .corner img {
-    width: 2em;
-    height: 2em;
-    object-fit: contain;
+    @apply h-8 w-8 object-contain;
   }
 
   nav {
