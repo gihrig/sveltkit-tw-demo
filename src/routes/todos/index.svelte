@@ -151,7 +151,6 @@
 
   .todo input:focus + .save,
   .save:focus {
-    transition: opacity 0.2s;
-    opacity: 1;
+    @apply opacity-100 transition duration-200;
   }
 </style>
