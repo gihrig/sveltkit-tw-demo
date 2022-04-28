@@ -138,7 +138,7 @@
     @apply m-0 mb-2 items-center p-2;
     @apply rounded-lg border bg-white;
     /* TODO: Do the following really make sense? */
-    @apply -translate-y-0.5 -translate-x-0.5 drop-shadow-md;
+    @apply -translate-y-0.5 -translate-x-0.5 drop-shadow-sm;
   }
 
   .todo button {
