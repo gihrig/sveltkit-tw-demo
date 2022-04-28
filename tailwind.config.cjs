@@ -10,6 +10,7 @@ const config = {
       backgroundImage: {
         'delete-icon': "URL('delete.svg')",
         'check-icon': "URL('check.svg')",
+        'save-icon': "URL('save.svg')",
       },
       borderWidth: {
         6: '6px',
