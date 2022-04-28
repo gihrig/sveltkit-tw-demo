@@ -134,17 +134,11 @@
   }
 
   .todo {
-    display: grid;
-    grid-template-columns: 2rem 1fr 2rem;
-    grid-gap: 0.5rem;
-    align-items: center;
-    margin: 0 0 0.5rem 0;
-    padding: 0.5rem;
-    background-color: white;
-    border-radius: 8px;
-    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.1));
-    transform: translate(-1px, -1px);
-    transition: filter 0.2s, transform 0.2s;
+    @apply grid grid-cols-[2rem_1fr_2rem] gap-2;
+    @apply m-0 mb-2 items-center p-2;
+    @apply rounded-lg border bg-white;
+    /* TODO: Do the followinf really make sense? */
+    @apply -translate-y-0.5 -translate-x-0.5 drop-shadow-md;
   }
 
   .todo button {

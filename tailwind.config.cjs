@@ -42,6 +42,9 @@ const config = {
       screens: {
         tablet: '720px',
       },
+      translate: {
+        0.5: '1px',
+      },
     },
   },
 
