@@ -9,6 +9,7 @@ const config = {
     extend: {
       backgroundImage: {
         'delete-icon': "URL('delete.svg')",
+        'check-icon': "URL('check.svg')",
       },
       borderWidth: {
         6: '6px',

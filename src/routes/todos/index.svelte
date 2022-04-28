@@ -112,14 +112,11 @@
   }
 
   .done {
-    transform: none;
-    opacity: 0.4;
-    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.1));
+    @apply transform-none opacity-40 drop-shadow-md;
   }
 
   .done .toggle {
-    /* Show check mark when {todo.done} */
-    background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5 1.5L7.4375 14.5L1.5 8.5909' stroke='%23676778' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    @apply bg-check-icon;
   }
 
   .new {
