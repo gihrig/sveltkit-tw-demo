@@ -7,6 +7,9 @@ const config = {
 
   theme: {
     extend: {
+      backgroundImage: {
+        'delete-icon': "URL('delete.svg')",
+      },
       borderWidth: {
         6: '6px',
       },
