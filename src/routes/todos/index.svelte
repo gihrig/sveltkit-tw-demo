@@ -137,19 +137,12 @@
     @apply grid grid-cols-[2rem_1fr_2rem] gap-2;
     @apply m-0 mb-2 items-center p-2;
     @apply rounded-lg border bg-white;
-    /* TODO: Do the followinf really make sense? */
+    /* TODO: Do the following really make sense? */
     @apply -translate-y-0.5 -translate-x-0.5 drop-shadow-md;
   }
 
   .todo button {
-    width: 2em;
-    height: 2em;
-    /* TODO: After element, class, alpha sort 'border: none'
-    removes TODO done circle. Not needed? */
-    /* border: none; */
-    background-color: transparent;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    @apply h-8 w-8 bg-transparent bg-center bg-no-repeat;
   }
 
   .todo input {
