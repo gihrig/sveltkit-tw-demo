@@ -35,6 +35,12 @@
 </section>
 
 <style>
+  path {
+    @apply stroke-text stroke-2;
+    /* TODO: vector-offset Not supported by Tailwind? */
+    vector-effect: non-scaling-stroke;
+  }
+
   section {
     @apply flex;
     @apply my-4 mx-0;
@@ -51,10 +57,8 @@
     @apply h-1/4 w-1/4;
   }
 
-  path {
-    @apply stroke-text stroke-2;
-    /* TODO: vector-offset Not supported by Tailwind? */
-    vector-effect: non-scaling-stroke;
+  .counter-digits {
+    @apply absolute h-full w-full;
   }
 
   .counter-viewport {
@@ -64,10 +68,6 @@
   .counter-viewport strong {
     @apply flex items-center justify-center;
     @apply absolute h-full w-full text-6.5xl font-normal text-accent;
-  }
-
-  .counter-digits {
-    @apply absolute h-full w-full;
   }
 
   .hidden {
