@@ -57,9 +57,7 @@
   }
 
   svg {
-    width: 2em;
-    height: 3em;
-    display: block;
+    @apply m-0 block h-12 justify-end;
   }
 
   path {
