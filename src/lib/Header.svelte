@@ -53,9 +53,7 @@
   }
 
   nav {
-    display: flex;
-    justify-content: center;
-    --background: rgba(255, 255, 255, 0.7);
+    @apply flex justify-center;
   }
 
   svg {
@@ -65,10 +63,11 @@
   }
 
   path {
-    fill: var(--background);
+    @apply fill-navbg;
   }
 
   ul {
+    @apply bg-navbg;
     position: relative;
     padding: 0;
     margin: 0;
@@ -77,7 +76,6 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    background: var(--background);
     background-size: contain;
   }
 
