@@ -78,14 +78,15 @@
   }
 
   li {
-    position: relative;
-    height: 100%;
+    @apply relative h-full;
+    /* position: relative; */
+    /* height: 100%; */
   }
 
   li.active::before {
-    content: ''; /* Tailwind does not generate classes if 'content-none' is used*/
     --ctr: calc(50% - 6px);
-    @apply absolute top-0 left-[var(--ctr)] h-0 w-0;
+    /* Tailwind does not generate classes if 'content-none' is used*/
+    @apply absolute top-0 left-[var(--ctr)] h-0 w-0 content-[''];
     @apply border-6 border-solid border-x-transparent border-t-accent;
   }
 </style>
