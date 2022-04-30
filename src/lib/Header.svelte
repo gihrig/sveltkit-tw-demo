@@ -73,16 +73,8 @@
   }
 
   ul {
-    @apply bg-navbg;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    height: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    background-size: contain;
+    @apply relative m-0 h-12 list-none p-0;
+    @apply flex items-center justify-center bg-navbg bg-contain;
   }
 
   li {
