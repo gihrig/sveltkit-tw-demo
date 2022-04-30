@@ -24,14 +24,8 @@
     @apply bg-[linear-gradient(180deg,#b9c6d2_0%,#d0dde9_10.45%,#edf0f8_41.35%)];
   }
 
-  h1,
-  h2,
-  p {
-    @apply font-normal text-heading;
-  }
-
-  p {
-    @apply leading-normal;
+  button:focus:not(:focus-visible) {
+    @apply outline-none;
   }
 
   h1 {
@@ -42,8 +36,14 @@
     @apply text-base;
   }
 
-  button:focus:not(:focus-visible) {
-    @apply outline-none;
+  h1,
+  h2,
+  p {
+    @apply font-normal text-heading;
+  }
+
+  p {
+    @apply leading-normal;
   }
 }
 
