@@ -40,16 +40,17 @@
     @apply flex justify-between;
   }
 
-  .corner {
-    @apply h-12 w-12;
+  li {
+    @apply relative h-full;
+    /* position: relative; */
+    /* height: 100%; */
   }
 
-  .corner a {
-    @apply flex h-full w-full items-center justify-center;
-  }
-
-  .corner img {
-    @apply h-8 w-8 object-contain;
+  li.active::before {
+    --ctr: calc(50% - 6px);
+    /* Tailwind does not generate classes if 'content-none' is used*/
+    @apply absolute top-0 left-[var(--ctr)] h-0 w-0 content-[''];
+    @apply border-6 border-solid border-x-transparent border-t-accent;
   }
 
   nav {
@@ -64,12 +65,12 @@
     @apply transition-colors delay-200 ease-linear;
   }
 
-  svg {
-    @apply m-0 block h-12 justify-end;
-  }
-
   path {
     @apply fill-navbg;
+  }
+
+  svg {
+    @apply m-0 block h-12 justify-end;
   }
 
   ul {
@@ -77,16 +78,15 @@
     @apply flex items-center justify-center bg-navbg bg-contain;
   }
 
-  li {
-    @apply relative h-full;
-    /* position: relative; */
-    /* height: 100%; */
+  .corner {
+    @apply h-12 w-12;
   }
 
-  li.active::before {
-    --ctr: calc(50% - 6px);
-    /* Tailwind does not generate classes if 'content-none' is used*/
-    @apply absolute top-0 left-[var(--ctr)] h-0 w-0 content-[''];
-    @apply border-6 border-solid border-x-transparent border-t-accent;
+  .corner a {
+    @apply flex h-full w-full items-center justify-center;
+  }
+
+  .corner img {
+    @apply h-8 w-8 object-contain;
   }
 </style>
