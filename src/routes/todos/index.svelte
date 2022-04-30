@@ -134,8 +134,9 @@
   }
 
   .todo {
+    /* TODO: Custom values are only for exact match to SvelteKit example */
     @apply grid grid-cols-[2rem_1fr_2rem] gap-2;
-    @apply m-0 mb-2 items-center p-2;
+    @apply m-0 mb-[.4rem] items-center p-2 pt-[.45rem];
     @apply rounded-lg border bg-white;
     /* TODO: Do the following really make sense? */
     @apply -translate-y-0.5 -translate-x-0.5 drop-shadow-sm;
