@@ -56,6 +56,14 @@
     @apply flex justify-center;
   }
 
+  nav a {
+    /* TODO: Custom values are only for exact match to SvelteKit example */
+    @apply flex h-full items-center py-0 px-[.8rem];
+    @apply text-[.8rem] font-bold text-heading hover:text-accent;
+    @apply uppercase tracking-widest no-underline;
+    @apply transition-colors delay-200 ease-linear;
+  }
+
   svg {
     @apply m-0 block h-12 justify-end;
   }
@@ -87,19 +95,5 @@
     --ctr: calc(50% - 6px);
     @apply absolute top-0 left-[var(--ctr)] h-0 w-0;
     @apply border-6 border-solid border-x-transparent border-t-accent;
-  }
-
-  nav a {
-    @apply text-heading hover:text-accent;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding: 0 1em;
-    font-weight: 700;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    transition: color 0.2s linear;
   }
 </style>
