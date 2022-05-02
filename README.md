@@ -10,6 +10,56 @@ Creating a SvelteKit + Tailwind project with svelte-add provides an example proj
 
 This project is intended to be `git clone`ed into a new project folder to be studied and/or modified to create your new project.
 
+## Working with this project
+
+```bash
+# Standardize file format across project
+
+  'yarn format'
+
+# Initialize git and make initial commit
+
+  'git init && git add . && git commit -m "initial"'
+
+## Developing
+
+# Start a development server and open the app in a new browser tab.
+
+  'yarn dev' or 'npm run dev'
+
+## Building
+
+# Create a production version of your app:
+
+  'yarn build' or 'npm run build'
+
+# Preview the production build:
+
+  'yarn preview' or 'npm run preview'.
+
+ # Open the build preview on an alternate port:
+
+  'yarn preview -p 3001' or 'npm run preview -- -p 3001'
+
+ # Deploy your app:
+
+  Copy the following to a generic web server
+
+  './package.json'
+  './yarn.lock' or './package-lock.json'
+  './build/**/*.*'
+
+  Install production dependencies
+
+  'yarn --prod' or 'npm install --production'
+
+  The project is configured for a generic web host with Node.js installed. For proprietary web hosts such as Cloudflare, Netlify, Vercel, etc., you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+  For a production quality installation using an enterprise class, yet simple, [webserver](https://caddyserver.com/) including automatic SSL certificate procurement and maintenance see:
+
+  [How to deploy a SvelteKit app with the node-adapter](https://codepilotsf.medium.com/how-to-deploy-a-sveltekit-node-app-1c11171fe852)
+```
+
 ## How this project was created
 
 As mentioned, a new project created with svelte-add and TailwindCSS added will provide an example project, if that option is selected, that uses vanilla CSS for styling.
@@ -112,50 +162,8 @@ I have had too many \"patch\" version dependencies that contained bugs. I would 
       "module": "ESNext"
     },
 
-# Standardize file format across project
+# Convert standard CSS to TailwindCSS
 
-  'yarn format'
-
-# Initialize git and make initial commit
-
-  'git init && git add . && git commit -m "initial"'
-
-## Developing
-
-# Start a development server and open the app in a new browser tab.
-
-  'yarn dev' or 'npm run dev'
-
-## Building
-
-# Create a production version of your app:
-
-  'yarn build' or 'npm run build'
-
-# Preview the production build:
-
-  'yarn preview' or 'npm run preview'.
-
- # Open the build preview on alternate port:
-
-  'yarn preview -p 3001' or 'npm run preview -p 3001'
-
- # Deploy your app:
-
-  Copy the following to a generic web server
-
-  './package.json'
-  './yarn.lock' or './package-lock.json'
-  './build/**/*.*'
-
-  Install production dependencies
-
-  'yarn --prod' or 'npm install --production'
-
-  You may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-  For a production quality installation using an enterprise class, yet simple, [webserver](https://caddyserver.com/) including automatic SSL certificate procurement and maintenance see:
-
-  [How to deploy a SvelteKit app with the node-adapter](https://codepilotsf.medium.com/how-to-deploy-a-sveltekit-node-app-1c11171fe852)
+  Review the 50+ commits to this repository
 
 ```
