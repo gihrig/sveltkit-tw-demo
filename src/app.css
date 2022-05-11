@@ -33,28 +33,22 @@
   }
 
   h2 {
-    @apply text-base;
+    @apply text-base font-bold;
   }
 
   h1,
   h2,
   p {
-    @apply font-normal text-heading;
+    @apply text-heading;
   }
 
   p {
-    @apply leading-normal;
+    @apply font-normal leading-normal;
   }
 
   pre {
-    @apply text-base;
-    @apply font-mono;
-    @apply bg-code-background;
-    @apply text-code-text;
-    @apply rounded;
-    @apply shadow-code;
-    @apply p-2;
-    @apply overflow-x-auto;
+    @apply overflow-x-auto rounded p-2 font-mono text-base;
+    @apply bg-code-background text-code-text;
   }
 }
 
