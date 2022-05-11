@@ -23,11 +23,12 @@
 <article class="leading-none">
   <h1>Blog</h1>
 
-  <ul class="m-0 p-0">
+  <ul class="m-0 mt-4 p-0">
     {#each posts as post}
       <li class="list-none">
-        <a class="block border-b-2 border-slate-400 py-2 px-0 font-bold" href="/blog/{post.slug}"
-          >{post.title}</a
+        <a
+          class="mb-2 block rounded-lg border bg-slate-50 py-2 px-2 font-bold"
+          href="/blog/{post.slug}">{post.title}</a
         >
       </li>
     {/each}
