@@ -37,11 +37,9 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<main id="index" class="col-span-9">
-  <article class="overflow-hidden border border-gray-200 bg-white p-3 hover:bg-gray-100">
-    <h1>{@html post.title}</h1>
-    <div class="post">
-      {@html post.body}
-    </div>
-  </article>
-</main>
+<article>
+  <h1>{@html post.title}</h1>
+  <div>
+    {@html post.body}
+  </div>
+</article>
