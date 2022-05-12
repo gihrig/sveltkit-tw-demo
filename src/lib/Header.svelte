@@ -10,7 +10,7 @@
   ];
 </script>
 
-<header>
+<header class="flex justify-between">
   <div class="corner">
     <a href="https://kit.svelte.dev" target="_blank">
       <img src={logo} alt="SvelteKit" />
@@ -39,10 +39,6 @@
 </header>
 
 <style>
-  header {
-    @apply flex justify-between;
-  }
-
   li {
     @apply relative h-full;
     /* position: relative; */
