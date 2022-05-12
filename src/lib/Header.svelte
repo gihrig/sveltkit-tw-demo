@@ -1,6 +1,13 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import logo from './img/svelte-logo.svg';
+
+  let links = [
+    { name: 'Home', path: '/' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'About', path: '/about' },
+    { name: 'Todos', path: '/todos' },
+  ];
 </script>
 
 <header>
@@ -15,18 +22,11 @@
       <path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
     </svg>
     <ul>
-      <li class:active={$page.url.pathname === '/'}>
-        <a sveltekit:prefetch href="/">Home</a>
-      </li>
-      <li class:active={$page.url.pathname === '/blog'}>
-        <a sveltekit:prefetch href="/blog">Blog</a>
-      </li>
-      <li class:active={$page.url.pathname === '/about'}>
-        <a sveltekit:prefetch href="/about">About</a>
-      </li>
-      <li class:active={$page.url.pathname === '/todos'}>
-        <a sveltekit:prefetch href="/todos">Todos</a>
-      </li>
+      {#each links as { name, path }}
+        <li class:active={$page.url.pathname === path}>
+          <a sveltekit:prefetch href={path}>{name}</a>
+        </li>
+      {/each}
     </ul>
     <svg viewBox="0 0 2 3" aria-hidden="true">
       <path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
