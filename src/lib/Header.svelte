@@ -18,7 +18,7 @@
   </div>
 
   <nav class="flex justify-center">
-    <svg viewBox="0 0 2 3" aria-hidden="true">
+    <svg class="m-0 block h-12 justify-end" viewBox="0 0 2 3" aria-hidden="true">
       <path class="fill-navbg" d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
     </svg>
     <ul>
@@ -34,7 +34,7 @@
         </li>
       {/each}
     </ul>
-    <svg viewBox="0 0 2 3" aria-hidden="true">
+    <svg class="m-0 block h-12 justify-end" viewBox="0 0 2 3" aria-hidden="true">
       <path class="fill-navbg" d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
     </svg>
   </nav>
@@ -45,10 +45,6 @@
 </header>
 
 <style>
-  svg {
-    @apply m-0 block h-12 justify-end;
-  }
-
   ul {
     @apply relative m-0 h-12 list-none p-0;
     @apply flex items-center justify-center bg-navbg bg-contain;
