@@ -54,4 +54,15 @@
 
 @tailwind components;
 
+@layer components {
+  /* Used in Header menu. Configured here to avoid generating an
+  additional .css file or cluttered TailwindCSS through repeated
+  active:before: statements */
+  .pointer.active::before {
+    /* Tailwind does not generate classes if 'content-none' is used */
+    @apply absolute top-0 left-[calc(50%-6px)] h-0 w-0 content-[''];
+    @apply border-6 border-solid border-x-transparent border-t-accent;
+  }
+}
+
 @tailwind utilities;

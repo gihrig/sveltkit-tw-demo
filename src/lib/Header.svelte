@@ -23,7 +23,7 @@
     </svg>
     <ul>
       {#each links as { name, path }}
-        <li class:active={$page.url.pathname === path}>
+        <li class="pointer relative h-full" class:active={$page.url.pathname === path}>
           <a sveltekit:prefetch href={path}>{name}</a>
         </li>
       {/each}
@@ -39,19 +39,6 @@
 </header>
 
 <style>
-  li {
-    @apply relative h-full;
-    /* position: relative; */
-    /* height: 100%; */
-  }
-
-  li.active::before {
-    --ctr: calc(50% - 6px);
-    /* Tailwind does not generate classes if 'content-none' is used*/
-    @apply absolute top-0 left-[var(--ctr)] h-0 w-0 content-[''];
-    @apply border-6 border-solid border-x-transparent border-t-accent;
-  }
-
   nav {
     @apply flex justify-center;
   }
