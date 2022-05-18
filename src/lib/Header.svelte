@@ -17,14 +17,20 @@
     </a>
   </div>
 
-  <nav>
+  <nav class="flex justify-center">
     <svg viewBox="0 0 2 3" aria-hidden="true">
       <path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
     </svg>
     <ul>
       {#each links as { name, path }}
         <li class="pointer relative h-full" class:active={$page.url.pathname === path}>
-          <a sveltekit:prefetch href={path}>{name}</a>
+          <a
+            class="flex h-full items-center py-0 px-[.8rem] text-[.8rem]
+            font-bold uppercase tracking-widest text-heading no-underline
+            transition-colors delay-200 ease-linear hover:text-accent"
+            sveltekit:prefetch
+            href={path}>{name}</a
+          >
         </li>
       {/each}
     </ul>
@@ -39,16 +45,16 @@
 </header>
 
 <style>
-  nav {
+  /* nav {
     @apply flex justify-center;
-  }
+  } */
 
   nav a {
     /* TODO: Custom values are only for exact match to SvelteKit example */
-    @apply flex h-full items-center py-0 px-[.8rem];
+    /* @apply flex h-full items-center py-0 px-[.8rem];
     @apply text-[.8rem] font-bold text-heading hover:text-accent;
     @apply uppercase tracking-widest no-underline;
-    @apply transition-colors delay-200 ease-linear;
+    @apply transition-colors delay-200 ease-linear; */
   }
 
   path {
