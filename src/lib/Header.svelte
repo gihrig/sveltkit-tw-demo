@@ -19,7 +19,7 @@
 
   <nav class="flex justify-center">
     <svg viewBox="0 0 2 3" aria-hidden="true">
-      <path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
+      <path class="fill-navbg" d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
     </svg>
     <ul>
       {#each links as { name, path }}
@@ -35,7 +35,7 @@
       {/each}
     </ul>
     <svg viewBox="0 0 2 3" aria-hidden="true">
-      <path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
+      <path class="fill-navbg" d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
     </svg>
   </nav>
 
@@ -45,22 +45,6 @@
 </header>
 
 <style>
-  /* nav {
-    @apply flex justify-center;
-  } */
-
-  nav a {
-    /* TODO: Custom values are only for exact match to SvelteKit example */
-    /* @apply flex h-full items-center py-0 px-[.8rem];
-    @apply text-[.8rem] font-bold text-heading hover:text-accent;
-    @apply uppercase tracking-widest no-underline;
-    @apply transition-colors delay-200 ease-linear; */
-  }
-
-  path {
-    @apply fill-navbg;
-  }
-
   svg {
     @apply m-0 block h-12 justify-end;
   }
