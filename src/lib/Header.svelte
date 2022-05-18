@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import logo from './img/svelte-logo.svg';
+  import repo from './img/GitHub-Mark-Light-32px.png';
 
   let links = [
     { name: 'Home', path: '/' },
@@ -18,7 +19,7 @@
       href="https://kit.svelte.dev"
       target="_blank"
     >
-      <img class="h-8 w-8 object-contain" src={logo} alt="SvelteKit" />
+      <img class="h-8 w-8 object-contain" src={logo} title="SveltKit" alt="SvelteKit" />
     </a>
   </div>
 
@@ -46,7 +47,14 @@
     </svg>
   </nav>
 
+  <!-- Right corner -->
   <div class="h-12 w-12">
-    <!-- TODO put something else here? github link? -->
+    <a
+      class="flex h-full w-full items-center justify-center"
+      href="https://github.com/gihrig/sveltkit-tw-demo"
+      target="_blank"
+    >
+      <img class="h-8 w-8 object-contain" src={repo} title="Repository" alt="Repository" />
+    </a>
   </div>
 </header>
