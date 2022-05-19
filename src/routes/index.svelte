@@ -11,7 +11,7 @@
 </svelte:head>
 
 <article class="mt-0 flex max-w-full flex-1 flex-col items-center justify-center">
-  <picture>
+  <picture class="relative h-0 w-full p-0 pb-[calc(100%*495/2048)]">
     <source srcset="svelte-welcome.webp" type="image/webp" />
     <img src="svelte-welcome.png" alt="Welcome" />
   </picture>
@@ -28,11 +28,6 @@
 </article>
 
 <style>
-  picture {
-    --pb: calc(100% * 495 / 2048);
-    @apply relative h-0 w-full p-0 pb-[var(--pb)];
-  }
-
   picture img {
     @apply absolute top-0 block h-full w-full;
   }
