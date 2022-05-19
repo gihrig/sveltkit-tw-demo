@@ -13,7 +13,7 @@
 <article class="mt-0 flex max-w-full flex-1 flex-col items-center justify-center">
   <picture class="relative h-0 w-full p-0 pb-[calc(100%*495/2048)]">
     <source srcset="svelte-welcome.webp" type="image/webp" />
-    <img src="svelte-welcome.png" alt="Welcome" />
+    <img class="absolute top-0 block h-full w-full" src="svelte-welcome.png" alt="Welcome" />
   </picture>
 
   <h1 class="w-full">
@@ -26,9 +26,3 @@
 
   <Counter />
 </article>
-
-<style>
-  picture img {
-    @apply absolute top-0 block h-full w-full;
-  }
-</style>
