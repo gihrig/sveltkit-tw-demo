@@ -10,7 +10,7 @@
   <title>Home</title>
 </svelte:head>
 
-<article>
+<article class="mt-0 flex max-w-full flex-1 flex-col items-center justify-center">
   <picture>
     <source srcset="svelte-welcome.webp" type="image/webp" />
     <img src="svelte-welcome.png" alt="Welcome" />
@@ -28,11 +28,6 @@
 </article>
 
 <style>
-  article {
-    @apply mt-0 max-w-full;
-    @apply flex flex-1 flex-col items-center justify-center;
-  }
-
   h1 {
     @apply w-full;
   }
