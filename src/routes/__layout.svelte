@@ -6,19 +6,8 @@
 
 <Header />
 
-<main>
+<main class="my-0 mx-auto box-border flex w-full max-w-screen-lg flex-1 flex-col p-4">
   <slot />
 </main>
 
 <Footer />
-
-<style>
-  main {
-    @apply flex flex-1 flex-col;
-    @apply p-4;
-    @apply w-full;
-    @apply max-w-screen-lg;
-    @apply my-0 mx-auto;
-    @apply box-border;
-  }
-</style>
