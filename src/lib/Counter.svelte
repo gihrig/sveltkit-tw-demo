@@ -29,10 +29,21 @@
     </svg>
   </button>
 
-  <div class="counter-viewport">
-    <div class="counter-digits" style="transform: translate(0, {100 * offset}%)">
-      <strong class="hidden" aria-hidden="true">{Math.floor($displayed_count + 1)}</strong>
-      <strong>{Math.floor($displayed_count)}</strong>
+  <div class="relative h-16 w-32 overflow-hidden text-center">
+    <div class="absolute h-full w-full" style="transform: translate(0, {100 * offset}%)">
+      <strong
+        class="absolute top-[-100%] flex h-full w-full select-none
+          items-center justify-center text-6.5xl font-normal text-accent"
+        aria-hidden="true"
+      >
+        {Math.floor($displayed_count + 1)}
+      </strong>
+      <strong
+        class="absolute flex h-full w-full items-center justify-center
+          text-6.5xl font-normal text-accent"
+      >
+        {Math.floor($displayed_count)}
+      </strong>
     </div>
   </div>
 
@@ -51,22 +62,3 @@
     </svg>
   </button>
 </section>
-
-<style>
-  .counter-digits {
-    @apply absolute h-full w-full;
-  }
-
-  .counter-viewport {
-    @apply relative h-16 w-32 overflow-hidden text-center;
-  }
-
-  .counter-viewport strong {
-    @apply flex items-center justify-center;
-    @apply absolute h-full w-full text-6.5xl font-normal text-accent;
-  }
-
-  .hidden {
-    @apply top-[-100%] select-none;
-  }
-</style>
