@@ -20,7 +20,7 @@
     on:click={() => (count -= 1)}
     aria-label="Decrease the counter by one"
   >
-    <svg aria-hidden="true" viewBox="0 0 1 1">
+    <svg class="h-1/4 w-1/4" aria-hidden="true" viewBox="0 0 1 1">
       <path
         style="vector-effect: non-scaling-stroke;"
         class="stroke-text stroke-2"
@@ -42,7 +42,7 @@
     on:click={() => (count += 1)}
     aria-label="Increase the counter by one"
   >
-    <svg aria-hidden="true" viewBox="0 0 1 1">
+    <svg class="h-1/4 w-1/4" aria-hidden="true" viewBox="0 0 1 1">
       <path
         style="vector-effect: non-scaling-stroke;"
         class="stroke-text stroke-2"
@@ -53,10 +53,6 @@
 </section>
 
 <style>
-  svg {
-    @apply h-1/4 w-1/4;
-  }
-
   .counter-digits {
     @apply absolute h-full w-full;
   }
