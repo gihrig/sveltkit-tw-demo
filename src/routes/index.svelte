@@ -16,7 +16,7 @@
     <img src="svelte-welcome.png" alt="Welcome" />
   </picture>
 
-  <h1>
+  <h1 class="w-full">
     to your new<br />SvelteKit app
   </h1>
 
@@ -28,10 +28,6 @@
 </article>
 
 <style>
-  h1 {
-    @apply w-full;
-  }
-
   picture {
     --pb: calc(100% * 495 / 2048);
     @apply relative h-0 w-full p-0 pb-[var(--pb)];
