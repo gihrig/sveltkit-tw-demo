@@ -13,8 +13,13 @@
   }
 </script>
 
-<section>
-  <button on:click={() => (count -= 1)} aria-label="Decrease the counter by one">
+<section class="my-4 mx-0 flex border-y border-solid border-slate-300">
+  <button
+    class="flex w-16 touch-manipulation items-center justify-center border-0
+    bg-transparent p-0 text-3.5xl text-text hover:bg-hoverbg"
+    on:click={() => (count -= 1)}
+    aria-label="Decrease the counter by one"
+  >
     <svg aria-hidden="true" viewBox="0 0 1 1">
       <path
         style="vector-effect: non-scaling-stroke;"
@@ -31,7 +36,12 @@
     </div>
   </div>
 
-  <button on:click={() => (count += 1)} aria-label="Increase the counter by one">
+  <button
+    class="flex w-16 touch-manipulation items-center justify-center border-0
+    bg-transparent p-0 text-3.5xl text-text hover:bg-hoverbg"
+    on:click={() => (count += 1)}
+    aria-label="Increase the counter by one"
+  >
     <svg aria-hidden="true" viewBox="0 0 1 1">
       <path
         style="vector-effect: non-scaling-stroke;"
@@ -43,18 +53,6 @@
 </section>
 
 <style>
-  section {
-    @apply flex;
-    @apply my-4 mx-0;
-    @apply border-y border-solid border-slate-300;
-  }
-
-  section button {
-    @apply flex items-center justify-center;
-    @apply w-16 p-0 text-3.5xl text-text hover:bg-hoverbg;
-    @apply touch-manipulation border-0 bg-transparent;
-  }
-
   svg {
     @apply h-1/4 w-1/4;
   }
