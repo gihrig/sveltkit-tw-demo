@@ -75,6 +75,18 @@
   {/each}
 </article>
 
+<!-- Having styles in a separate <style>
+section seems to be a better balance between
+utility classes located with the tag they affect
+vs hidding that complexity
+
+Specifically considering some of the CSS selector
+complexity used on this page.
+
+The downside of generatinf an additional CSS file
+and resuting server round trip is diluted by the
+need to fetch data from the server. As a result
+Todod will not be a fast loading page anyway. -->
 <style>
   article {
     /* TODO: Required only for exact match of SvelteKit example */
