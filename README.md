@@ -2,7 +2,7 @@
 
 Almost everything you need to build a SvelteKit-Tailwind starter project  powered by [`svelte-add`](https://github.com/svelte-add/svelte-add) including an example project styled with TailwindCSS.
 
-This an opinionated SvelteKit-Tailwind project with Tailwind "batteries" included.
+This is an opinionated SvelteKit-Tailwind project with Tailwind "batteries" included.
 
 Creating a SvelteKit + Tailwind project with svelte-add provides an example project styled with vanilla CSS, not Tailwind CSS.
 
@@ -64,7 +64,7 @@ This project is intended to be `git clone`ed into a new project folder to be stu
 
 As mentioned, a new project created with svelte-add and TailwindCSS added will provide an example project, if that option is selected, that uses vanilla CSS for styling.
 
-The exact steps I used to create this project follow. You may want to modify these steps to create a project that is to your liking or fill specific needs, or perhaps you're just curious what's required to take a svelte-add project to completion.
+The exact steps I used to create this project follow. You may want to modify these steps to create a project that is to your liking or fill specific needs, or perhaps you're just curious about what's required to take a svelte-add project to completion.
 
 ```bash
 # Create a new project below the current directory with selected options
