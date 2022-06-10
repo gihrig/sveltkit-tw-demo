@@ -2,6 +2,7 @@ const typography = require('@tailwindcss/typography');
 const forms = require('@tailwindcss/forms');
 const { readBuilderProgram } = require('typescript');
 
+/** @type {import('tailwindcss').Config} */
 const config = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
 
